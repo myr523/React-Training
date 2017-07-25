@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import LogoImage from './LogoImage.jsx'
 
+
 export default class Logo extends React.Component {
 
   /**
@@ -27,6 +28,7 @@ export default class Logo extends React.Component {
      this.onLeave = this.onLeave.bind(this)
    }
 
+
    /**
     * onhover handler
     * @return {void}
@@ -34,7 +36,7 @@ export default class Logo extends React.Component {
    onEnter() {
      this.setState({
        isHovered : true,
-       count     : this.state.count + 1,
+       count     : this.state.count + 10,
      })
    }
 
@@ -45,7 +47,7 @@ export default class Logo extends React.Component {
    onLeave() {
      this.setState({
        isHovered : false,
-       count     : this.state.count + 1,
+       count     : this.state.count + 10,
      })
    }
 

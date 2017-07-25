@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Logo from './Logo.jsx'
+import Table from './Table.jsx'
 
 export default class App extends React.Component {
 
@@ -31,11 +32,15 @@ export default class App extends React.Component {
     } = this.props
 
     return (
+      //allow func
+      //カリー化
+      //
       <div>
         <h1>{ title }</h1>
-        <p>{ 'Hello, React!' }</p>
-        <Logo size={ [100, 100] } />
-      </div>
+        <p>{ 'React!' }</p>
+        <Logo size={ [100, 100] } /> {/*props*/}
+        <Table />
+      </div>  //JSX式
     )
   }
 }
